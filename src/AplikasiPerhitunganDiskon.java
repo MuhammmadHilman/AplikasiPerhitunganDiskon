@@ -136,6 +136,7 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
         sliderDiskon.setMinorTickSpacing(5);
         sliderDiskon.setPaintLabels(true);
         sliderDiskon.setPaintTicks(true);
+        sliderDiskon.setValue(0);
         sliderDiskon.setName(""); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
