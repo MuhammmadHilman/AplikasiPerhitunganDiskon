@@ -55,6 +55,8 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
         txtHargaAkhir = new javax.swing.JTextField();
         txtHemat = new javax.swing.JTextField();
         btnHitung = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        txtKupon = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         areaRiwayat = new javax.swing.JTextArea();
@@ -70,7 +72,7 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(77, 81, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(82, 64, 0, 0);
         jPanel1.add(jLabel1, gridBagConstraints);
 
         jLabel2.setText("Diskon");
@@ -78,7 +80,7 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(21, 81, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(21, 64, 0, 0);
         jPanel1.add(jLabel2, gridBagConstraints);
 
         jLabel3.setText("Harga Akhir");
@@ -87,7 +89,7 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
         gridBagConstraints.gridy = 5;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(14, 81, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(14, 64, 0, 0);
         jPanel1.add(jLabel3, gridBagConstraints);
 
         jLabel4.setText("Hemat");
@@ -95,7 +97,7 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 7;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(21, 81, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(21, 64, 0, 0);
         jPanel1.add(jLabel4, gridBagConstraints);
 
         txtHargaAwal.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -109,24 +111,23 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.gridheight = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipadx = 357;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(74, 94, 0, 54);
+        gridBagConstraints.insets = new java.awt.Insets(79, 93, 0, 95);
         jPanel1.add(txtHargaAwal, gridBagConstraints);
 
         comboDiskon.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Diskon", "5%", "10%", "15%", "20%", "25%", "30%", "35%", "40%", "45%", "50%", "55%", "60%", "65%", "70%" }));
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 2;
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.ipadx = 41;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(18, 94, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(18, 93, 0, 0);
         jPanel1.add(comboDiskon, gridBagConstraints);
 
         sliderDiskon.setFont(new java.awt.Font("Tahoma", 1, 8)); // NOI18N
@@ -137,7 +138,7 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
         sliderDiskon.setPaintTicks(true);
         sliderDiskon.setName(""); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 2;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.ipadx = 178;
@@ -148,26 +149,24 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
 
         txtHargaAkhir.setEditable(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.gridheight = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipadx = 357;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(11, 94, 0, 54);
+        gridBagConstraints.insets = new java.awt.Insets(11, 93, 0, 95);
         jPanel1.add(txtHargaAkhir, gridBagConstraints);
 
         txtHemat.setEditable(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 7;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.gridheight = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipadx = 357;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(18, 94, 0, 54);
+        gridBagConstraints.insets = new java.awt.Insets(18, 93, 0, 95);
         jPanel1.add(txtHemat, gridBagConstraints);
 
         btnHitung.setText("Hitung");
@@ -177,14 +176,31 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 9;
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 11;
         gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipadx = 300;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(17, 94, 66, 54);
+        gridBagConstraints.insets = new java.awt.Insets(18, 93, 7, 95);
         jPanel1.add(btnHitung, gridBagConstraints);
+
+        jLabel5.setText("Kode Kupon");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(21, 64, 0, 0);
+        jPanel1.add(jLabel5, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 357;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(18, 93, 0, 95);
+        jPanel1.add(txtKupon, gridBagConstraints);
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Riwayat Diskon"));
 
@@ -198,13 +214,13 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 608, Short.MAX_VALUE)
+                .addComponent(jScrollPane1)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -216,7 +232,7 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 660, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 684, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -235,9 +251,14 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
         try {
         int hargaAwal, hargaAkhir, hemat;
         String diskon = comboDiskon.getSelectedItem().toString();
+        String kupon = "5persen";
         hargaAwal = Integer.parseInt(txtHargaAwal.getText()); // Parse input as integer
 
+        if (txtKupon.getText().equals(kupon)) {
+            hargaAkhir = hargaAwal - (hargaAwal * 5 / 100);
+        } else {
             hargaAkhir = hargaAwal; // If no coupon, keep hargaAkhir as hargaAwal
+        }
         
         switch (diskon) {
             case "5%":
@@ -292,6 +313,7 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
 
         // Append history to areaRiwayat
         String history = "Harga Awal: " + hargaAwal + ", Diskon: " + diskon 
+                         + ", Kupon: " + (txtKupon.getText().equals(kupon) ? "5%" : "None") 
                          + ", Harga Akhir: " + hargaAkhir + ", Hemat: " + hemat + "\n";
         areaRiwayat.append(history);
 
@@ -356,6 +378,7 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
@@ -363,5 +386,6 @@ public class AplikasiPerhitunganDiskon extends javax.swing.JFrame {
     private javax.swing.JTextField txtHargaAkhir;
     private javax.swing.JTextField txtHargaAwal;
     private javax.swing.JTextField txtHemat;
+    private javax.swing.JTextField txtKupon;
     // End of variables declaration//GEN-END:variables
 }
